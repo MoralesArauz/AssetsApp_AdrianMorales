@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AssetsApp_AdrianMorales.Views.LoginPage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Padding="30,30,30,30">
+            
+            <Image Source="Logo.PNG" />
+            <Button x:Name="BtnLogin" 
+                    Text="Iniciar Sesión" 
+                    Clicked="BtnLogin_Clicked" 
+                    BackgroundColor="DarkGreen" 
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontSize="Large"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

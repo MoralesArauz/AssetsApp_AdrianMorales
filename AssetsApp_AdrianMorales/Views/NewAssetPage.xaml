@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AssetsApp_AdrianMorales.Views.NewAssetPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="BtnListAssets" Text="Lista de Activos" Clicked="BtnListAssets_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Padding="15,15,15,15" VerticalOptions="Center">
+            <Label Text="Nombre:" />
+            <Entry x:Name="TxtName" Placeholder="Activo" />
+            
+            <Label Text="Área:" />
+            <Entry x:Name="TxtArea" Placeholder="Contabilidad / Gerencia" />
+            
+            <Label  Text="Costo:" />
+            <Entry x:Name="TxtCost" Placeholder="₡1000" Keyboard="Numeric" />
+
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="BtnRegister" 
+                        Text="Registrar" 
+                        BackgroundColor="Green" 
+                        TextColor="White" 
+                        FontAttributes="Bold"
+                        Clicked="BtnRegister_Clicked"/>
+                
+                <Button x:Name="BtnCancel" 
+                        Text="Ver Lista" 
+                        BackgroundColor="Blue" 
+                        FontAttributes="Bold"
+                        Clicked="BtnCancel_Clicked"/>
+            </StackLayout>
+
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
